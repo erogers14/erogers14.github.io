@@ -1,0 +1,223 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<TITLE>2018 DREU</TITLE>
+
+
+<style type="text/css">
+* {
+    box-sizing: border-box;
+}
+
+/* Add a blue background color with some padding */
+body {
+    font-family: Arial;
+    padding: 20px;
+    background: #b3d9ff;
+}
+
+.leftcolumn {   
+    float: left;
+    width: 100%;
+}
+
+.card {
+     background-color: white;
+     padding: 20px 20px 7px 20px;
+     margin-top: 20px;
+}
+
+.card2 {
+     background-color: #b3d9ff;
+     margin-top: 20px;
+     float: center;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+a:link {
+    color: blue; 
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:visited {
+    color: blue;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: #0604b8;
+    background-color: transparent;
+   text-decoration: underline;
+}
+
+a:active {
+    color: blue;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    border: none;
+    background-color: #b3d9ff;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    background-color: inherit;
+    float: center;
+    border: 1px solid #ccc;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: none;
+    border: none;
+}
+
+p.big {
+    line-height: 1.8;
+}
+
+p.big2 {
+	line-height: 1.8;
+	background-color: #ddd;
+	padding: 20px;
+}
+
+</style>
+
+
+<div class="card2">
+
+<center>
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'Home Page')" id="defaultOpen">Home Page</button>
+  <button class="tablinks" onclick="openCity(event, 'About Me')">About Me</button>
+  <button class="tablinks" onclick="openCity(event, 'About My Mentor')">About My Mentor</button>
+  <button class="tablinks" onclick="openCity(event, 'Project Description')">Project Description</button>
+  <button class="tablinks" onclick="openCity(event, 'Journal')">Journal</button>
+</div>
+</center>
+
+</div>
+
+<div id="Home Page" class="tabcontent">
+	<center>
+		<font size="4"><p class="big">Welcome to my 2018 DREU website!</p>
+    </font> </center><center>
+  <img src="Seattle.JPG" hspace="20" style="width:403.2px;height:302.4px;">
+</center>
+	
+  
+</div>
+
+
+<div id="About Me" class="tabcontent">
+  <img src="Smith.jpg" hspace="20" style="float:right;width:403.2px;height:302.4px;">
+	<font size="4"><p class="big">My name is Emmely Rogers. I am a mathematics and computer science double major at Smith College in Northampton, MA. I will graduate from Smith in May 2019. My ten week 2018 DREU experience is taking place in Seattle, WA. In my free time I enjoy taking photographs, playing Candy Crush, and eating mint chocolate chip ice cream.</p>
+		 <br><br>E-mail address:
+     <a href="mailto:erogers@smith.edu">erogers@smith.edu</a>
+    </font>
+  
+</div>
+
+<div id="About My Mentor" class="tabcontent">
+  <img src="CSE.JPG" hspace="20" style="float:right;width:403.2px;height:302.4px;">
+	<font size="4"><p class="big">This summer I am working with Anna Karlin. She is a Microsoft Professor of Computer Science &amp Engineering at the University of Washington. Her area of research is in theoretical computer science, with a focus on algorithms. <br> <br> Anna helped me find housing with <a href="https://www.cs.washington.edu/people/faculty/jmankoff">Jennifer Mankoff</a>, another professor from the department, before UW's summer quarter begins and I can move onto campus.</p> <br> <br></font> 
+<font size="4"><a href="https://www.cs.washington.edu/people/faculty/karlin">Anna's UW Homepage</a></font> <br> <br>
+<font size="4"><a href="https://homes.cs.washington.edu/~karlin/">Anna's Personal Webpage</a></font>
+	
+ 
+</div>
+
+<div id="Project Description" class="tabcontent">
+	<font size="4"><p class="big">The project sits at the crossroads of economics and computer science. It is a continuation of research that has been done by Anna and others. The research is focused on designing mechanisms to determine which seller will be placed in Amazon's Buy Box and studying how this decision affects the market. So far, the mechanisms that have been studied are the Lowest Price First mechanism, Random mechanism, Threshold mechanism, and Exponential mechanism. For all mechanisms, best response dynamics was used to determine seller behavior.<br><br>
+
+
+In the Lowest Price First mechanism the seller with the lowest price is placed in the Buy Box (ties are broken randomly). In the Random mechanism the seller placed in the Buy Box is chosen uniformly at random without considering prices. The Threshold mechanism only considers sellers who have a price less than or equal to the threshold parameter and chooses one of them at random. In the Exponential mechanism the probability that seller <i>i</i> (with price <i>p<sub>i</sub></i>) is placed in the Buy Box is <i>e<sup>-&#945p<sub>i</sub> </sup></i>.
+ <br><br>
+
+The goal for this summer is to expand upon the experiments already conducted and evaluate the results. I have access to the Python program that has been created for the previous experiments, so I will be working on extending this code. Currently, the code only allows for two sellers. The first addition is to incorporate a production cost for each seller. Another extension is to continue using two sellers, but draw the buyer's value for each seller's item from two different distributions. After these steps have been completed, the next objective is to be able to experiment with more than two sellers.</p></font>
+ 
+</div>
+
+<div id="Journal" class="tabcontent">
+  
+
+<div class="row">
+  <div class="leftcolumn">
+  	
+    <div class="card">
+      <h2>Week 1</h2>
+      <h5>May 21, 2018 - May 25, 2018</h5>
+      
+      <p class="big2">During the first week I focused on understanding more details in the paper that the project is based upon and the existing Python program. I started by looking through the different functions and classes within the code and matching them to their corresponding sections in the paper. On Wednesday we had a video chat with the creator to learn more about how the Python program works. After this, I was able to run short tests provided in the code which allowed me to see examples of best response dynamics in action. I also started to read the <a href="http://www.eecs70.org/">probability notes</a> Anna suggested; I read <a href="http://www.eecs70.org/static/notes/n12.html">note 12</a> this week.<br><br>
+
+      I attended the theory seminar talk on Tuesday and the theory lunch talk on Friday which were both about "Alternate minimization algorithms for (matrix, operator, tensor) scaling problems, and their analysis" given by Rafael Oliveira, a postdoc at the University of Toronto.
+
+      On Friday after work I went to PoCSci 2018. It is the CSE's annual conference which consists of funny talks. For example, one talk discussed how CPUs are like penguins and another talk was filled with computer science and engineering cat puns.</p> 
+    </div>
+
+    
+    <div class="card">
+      <h2>Week 2</h2>
+      <h5>May 28, 2018 - June 1, 2018</h5>
+      	<p class="big2">On Monday we had another video chat to learn about the plotting section of the Python program. After the chat, I tested out the different plots to get a better grasp on how they work. This week I began incorporating production costs for the sellers into the code. I ran short tests to make sure the different distributions and mechanisms worked with the new code. I also worked on fixing a small bug in the code; there were cases where the code did not detect when the search cost was too high. To solidify my understanding of the code and how it all works together, I started creating a call tree. I continued reading probability notes as well (<a href="http://www.eecs70.org/static/notes/n13.html">note 13</a> and <a href="http://www.eecs70.org/static/notes/n14.html">note 14</a>). <br><br>
+
+        On Tuesday I attended Cyrus Rashtchian's thesis defense entitled "New Algorithmic Tools for Distributed Similarity Search and Edge Estimation." On Friday I went to the theory lunch talk on "Wasserstein GAN" given by Sudipto Mukherjee, a UW graduate student.
+        </p> 
+    </div>
+
+  </div>
+</div>
+</div>
+
+
+
+<script>
+function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+</body>
+</html>
