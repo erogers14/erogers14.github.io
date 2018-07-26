@@ -110,6 +110,62 @@ p.big2 {
 	background-color: #ddd;
 	padding: 20px;
 }
+	
+.container {
+    position: relative;
+    width: 30%;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.phototext {
+  background-color: #ddd;
+  color: black;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.imgcontainer {
+  text-align: center;
+}
+.imgcontainer ul {
+  display: inline-block;
+  margin: 10px 0;
+  padding: 2px;
+}
+.imgcontainer li {
+  display: inline-block;
+}
 
 </style>
 
@@ -131,9 +187,45 @@ p.big2 {
 <div id="Home Page" class="tabcontent">
 	<center>
 		<font size="4"><p class="big">Welcome to my 2018 DREU website!</p>
-    </font> </center><center>
-  <img src="Seattle.JPG" hspace="20" style="width:403.2px;height:302.4px;">
-</center>
+    </font> </center>
+	
+<div class="row">
+    <div class="imgcontainer">
+    <ul>
+      <li>
+      <div class="container">
+        <img src="Seattle.JPG" hspace="20" class="image" style="width:403.2px;height:302.4px;" border="2">
+        <div class="middle">
+          <div class="phototext">Kerry Park</div>
+        </div>
+      </div></li>
+        
+      <li>
+      <div class="container">
+        <img src="market.JPG" hspace="20" class="image" style="width:403.2px;height:302.4px;" border="2">
+        <div class="middle">
+          <div class="phototext">Pike Place Market</div>
+        </div>
+      </div> </li> </ul></div>
+
+
+
+<div class="imgcontainer"><ul>
+      <li><div class="container">
+        <img src="gardens.JPG" hspace="20" class="image" style="width:403.2px;height:302.4px;" border="2">
+        <div class="middle">
+          <div class="phototext">Seattle Japanese Garden</div>
+        </div>
+      </div> </li>
+      <li><div class="container">
+        <img src="zoo.JPG" hspace="20" class="image" style="width:403.2px;height:302.4px;" border="2">
+        <div class="middle">
+          <div class="phototext">Woodland Park Zoo</div>
+        </div>
+      </div> </li>
+    </ul>
+</div>
+</div>
 	
   
 </div>
